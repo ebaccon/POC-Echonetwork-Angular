@@ -1,1 +1,9 @@
 <p>user works!</p>
+
+@for (user of userList; track $index) {
+    <div>
+        <div>Id: {{user.id}}</div>
+        <div>Firstname: {{user.firstName}}</div>
+        <div>Lastname: {{user.lastName}}</div>
+    </div>
+}
