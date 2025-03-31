@@ -1,9 +1,10 @@
-<p>user works!</p>
+<h1>user works!</h1>
 
 @for (user of userList; track $index) {
-    <div>
+    <div class="flex">
         <div>Id: {{user.id}}</div>
         <div>Firstname: {{user.firstName}}</div>
         <div>Lastname: {{user.lastName}}</div>
+        <app-button (click)="handleClickDisplayDetail()">Details</app-button>
     </div>
 }
