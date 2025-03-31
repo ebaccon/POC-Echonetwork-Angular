@@ -10,6 +10,6 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   findAll() {
-    return this.http.get<User[]>('http://localhost:3000/user');
+    return this.http.get<User[]>('http://localhost:8080/user');
   }
 }
