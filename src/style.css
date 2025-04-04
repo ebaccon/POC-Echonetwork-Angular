@@ -1,0 +1,8 @@
+/* Why this file exist ?
+- Because Tailwind plugin (use tailwindcss-intellisense) autocomplete don't work with tailwind V4 ans SASS preprocessor
+- It's not a problem with Webstorm or Tailwind itself
+- Explanation : https://github.com/tailwindlabs/tailwindcss-intellisense/issues/1154#issuecomment-2628101875
+- Just need to create a .css file with this import and @use this file into the .scss file for work */
+@import "tailwindcss";
+
+

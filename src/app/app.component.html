@@ -1,10 +1,7 @@
-<h1>APP</h1>
+<div [class]="{ 'dark' : darkModeService.isDarkMode() }">
+    <h1 class="dark:bg-gray-500">APP</h1>
 
-<nav>
-  <ul>
-    <li><a routerLink="/activity" routerLinkActive="active" ariaCurrentWhenActive="page">Activity</a></li>
-    <li><a routerLink="/admin" routerLinkActive="active" ariaCurrentWhenActive="page">Admin</a></li>
-  </ul>
-</nav>
+    <app-navbar />
 
-<router-outlet />
+    <router-outlet />
+</div>

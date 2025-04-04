@@ -1,7 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
-@use "tailwindcss";
+@use "style.css";
 
+@custom-variant dark (&:where(.dark, .dark *));
 
 h1 {
-    @apply font-bold;
+    @apply font-bold text-3xl;
 }

@@ -1,7 +1,7 @@
 import {Component, inject} from '@angular/core';
 import { UserService } from '../../../api/user.api.service';
 import { User } from '../../../model/user';
-import {ButtonComponent} from '../../../component/ui/button/button.component';
+import {ButtonComponent} from '../../../shared/component/ui/button/button.component';
 
 @Component({
   selector: 'app-user',
