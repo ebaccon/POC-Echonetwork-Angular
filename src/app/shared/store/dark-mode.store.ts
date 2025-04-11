@@ -17,6 +17,5 @@ export const DarkModeStore = signalStore(
             patchState(store, { darkMode: localStorage.getItem(localStorageKeyDarkMode) === 'true' });
         }
     })
-
 );
 

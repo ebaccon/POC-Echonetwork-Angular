@@ -3,5 +3,13 @@
         <li><a grouterLink="/activity" routerLinkActive="active" ariaCurrentWhenActive="page">Activity</a></li>
         <li><a routerLink="/admin" routerLinkActive="active" ariaCurrentWhenActive="page">Admin</a></li>
     </ul>
-    <app-button (clickButton)="handleClickDarkMode()">DarkModeSwitch</app-button>
+    <app-button [variant]="'danger'"
+                (clickButton)="handleClickDarkMode()">
+        DarkModeSwitch
+    </app-button>
+    <app-switch-button
+        [checked]="true"
+        [disabled]="false"
+        (toggleSwitch)="handleClickDarkMode()"
+    ></app-switch-button>
 </nav>
