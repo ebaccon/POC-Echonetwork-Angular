@@ -1,7 +1,7 @@
 import {Component, inject} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {NavbarComponent} from './shared/component/navbar/navbar.component';
-import {DarkModeService} from './shared/service/dark-mode.service';
+import {DarkModeStore} from './shared/store/dark-mode.store';
 
 @Component({
   selector: 'app-root',
@@ -12,5 +12,5 @@ import {DarkModeService} from './shared/service/dark-mode.service';
 export class AppComponent {
     title = 'EchoNetwork';
 
-    darkModeService: DarkModeService = inject(DarkModeService);
+    readonly darkModeStore = inject(DarkModeStore);
 }

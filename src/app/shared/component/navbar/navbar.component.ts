@@ -1,7 +1,7 @@
 import {Component, inject} from '@angular/core';
 import {RouterLink, RouterLinkActive} from "@angular/router";
 import {ButtonComponent} from '../ui/button/button.component';
-import {DarkModeService} from '../../service/dark-mode.service';
+import {DarkModeStore} from '../../store/dark-mode.store';
 
 @Component({
   selector: 'app-navbar',
@@ -15,10 +15,10 @@ import {DarkModeService} from '../../service/dark-mode.service';
 })
 export class NavbarComponent {
 
-    darkModeService: DarkModeService = inject(DarkModeService);
+    readonly darkModeStore = inject(DarkModeStore);
 
     handleClickDarkMode() {
         console.log('DarkModeService clicked');
-        this.darkModeService.updateDarkMode();
+        this.darkModeStore.toggleDarkMode();
     }
 }
